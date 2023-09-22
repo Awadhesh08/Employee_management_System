@@ -22,7 +22,7 @@ function addEmployee(employee) {
     <td>${employee.company}</td>
     <td>${employee.designation}</td>
     <td>
-        <button onclick="deleteEmployee(this)" data-empid = "${employee.empid}">Delete</button>
+        <button  onclick="deleteEmployee(this)" data-empid = "${employee.empid}">Delete</button>
     </td>
     `;
   tbody.appendChild(tr);

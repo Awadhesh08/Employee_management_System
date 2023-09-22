@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee managment</title>
     <style>
+        * {
+            background-color: #f5dcdc;
+        }
+
         #root {
+            padding-top: 25px;
             display: grid;
             grid-template-columns: 4fr 8fr;
             gap: 20px;
         }
 
         #form {
+            background-color: rgb(115, 235, 235);
             display: flex;
             flex-direction: column;
             gap: 20px;
 
         }
 
+        #input
+       {
+            background-color: rgb(208, 232, 238);
+        }
+
+        #btn{
+            background-color: rgba(22, 207, 231, 0.733);
+        } 
+
         table {
+            background-color: rgb(208, 232, 238);
             align-self: start;
             border-collapse: collapse;
         }
@@ -26,6 +43,7 @@
         table,
         td,
         th {
+            background-color: rgb(115, 235, 235);
             border: 1px solid black;
         }
 
@@ -41,17 +59,17 @@
 <body>
     <div id="root">
         <form action="" id="form">
-            <input type="text" placeholder="Employee Name" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
-            <input type="text" placeholder="Employee ID" name="empid" required>
-            <input type="text" placeholder="Company Name" name="company" required>
-            <select name="designation">
-                <option value="SDE">SDE</option>
-                <option value="QA">QA</option>
-                <option value="TL">TL</option>
-                <option value="MANAGER">Manager</option>
+            <input id="input" type="text" placeholder="Employee Name" name="name" required>
+            <input id="input" type="email" placeholder="Email" name="email" required>
+            <input id="input" type="text" placeholder="Employee ID" name="empid" required>
+            <input id="input" type="text" placeholder="Company Name" name="company" required>
+            <select id="input" name="designation">
+                <option id="input" value="SDE">SDE</option>
+                <option id="input" value="QA">QA</option>
+                <option id="input" value="TL">TL</option>
+                <option id="input" value="MANAGER">Manager</option>
             </select>
-            <button>Add Employee</button>
+            <button id="btn">Add Employee</button>
         </form>
 
         <table>
