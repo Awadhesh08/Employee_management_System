@@ -6,7 +6,7 @@ const employees = [];
 function addEmployee(employee) {
   for (let i = 0; i < employees.length; i++) {
     e = employees[i];
-    if (e.email === employee.email) {
+    if (e.email === employee.email) { 
       alert("Email Already Exists");
       return;
     } else if (e.empid === employee.empid) {
